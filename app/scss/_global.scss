@@ -10,19 +10,13 @@ html{
 body{
     margin: 0;
     padding: 0;
+    background: $veryDarkBlue;
     color:$white;
     font-family: 'Inter', sans-serif;
     font-family: 'Public Sans', sans-serif;
     font-family: 'Spartan', sans-serif;
-
-    // max-width: 1440px;
-    // margin: 0 auto;
 }
 
-
-.container{
-    padding-bottom: 3rem ;
-}
 
 .flex{
     display: flex;

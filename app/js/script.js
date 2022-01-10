@@ -1,17 +1,24 @@
 
+const toggleIcon = document.querySelector('.toggle-icon')
+const container = document.querySelector('.container__theme1')
+const body = document.querySelector('body')
+const attr = document.querySelector('.attribution')
+const button = document.querySelector('button')
 
-const toggleIcon = document.querySelector('.toggle-icon');
-header = document.querySelector('.header')
 
 
+button.addEventListener('click', () => {
+   if(container.classList.contains('container__theme1')){
+       container.classList.remove('container__theme1')
+       container.classList.add('container__theme2')
+       body.style.background='hsl(0, 0%, 100%)'
 
-toggleIcon.addEventListener('click', () => {
+       attr.style.color ='red'
+   }
 
-    // if(header.classList.contains('header')){
-    //     header.classList.remove('header')
-    // }
-    // else{
-    //     header.classList.add('header')
-    // }
-    
+   else{
+    container.classList.add('container__theme1')
+    container.classList.remove('container__theme2')
+    body.style.background='hsl(230, 17%, 14%)'
+   }
 })

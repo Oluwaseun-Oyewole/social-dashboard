@@ -5,12 +5,12 @@
         height: 19.3125rem;
         background:$veryDarkBluey;
         padding-top: 1.7rem;
+        border-radius:0 0 40px 40px;
     
         @include breakpoint-down(medium){
            max-width: 1024px;
            margin:0 auto;
-        }
-    
+        }  
     
         @include breakpoint-down(small){
             padding-top: 1.7rem;
@@ -33,12 +33,11 @@
     
             }
     
-    
             @include breakpoint-down(small){
                 width: 300px;
                 width:100%;
                 padding: 0 1rem;
-                max-width: 375px;
+                max-width: 500px;
                 margin:0 auto;
                 display: block;
             }
@@ -86,7 +85,7 @@
                 outline: none;
                 border: none;
                 background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-                padding: 0.25rem 0.85rem 0.25rem 1.55rem;
+                padding: 0.30rem 0.95rem 0.25rem 1.55rem;
                 border-radius: 50px;
                 cursor: pointer;
     
@@ -94,7 +93,8 @@
                     background:$veryDarkBluey;
                     border-radius:50%;
                     width:1.22rem;
-                    height:1.32rem;
+                    height:1.22rem;
+                    padding:0.85rem;
                     transform: translateX(-20px);
                 }
                 
@@ -141,7 +141,7 @@
     
             width:100%;
             padding: 0 1rem;
-            max-width: 375px;
+            max-width: 500px;
     
          }
         
@@ -293,8 +293,8 @@
                 font-size: 17px;
                 width: 300px;
                 width:100%;
-                padding: 0 1rem;
-                max-width: 375px;
+                padding: 0 1.5rem;
+                max-width: 500px;
                 margin:0 auto;
                 display: block;
             }
@@ -321,8 +321,8 @@
             @include breakpoint-down(small){
                 width: 300px;
                 width:100%;
-                padding: 0 1rem;
-                max-width: 375px;
+                padding: 0 1.5rem;
+                max-width: 500px;
                 margin:0 auto;
                 display: block;
             }
@@ -449,7 +449,7 @@
                 width: 300px;
                 width:100%;
                 padding: 0 1rem;
-                max-width: 375px;
+                max-width: 500px;
                 margin:0 auto;
                 display: block;
             }
@@ -500,18 +500,29 @@
             .dark{
                 outline: none;
                 border: none;
-                background: $lightGrayishBlue;
-                padding: 0.25rem 0.85rem 0.25rem 1.55rem;
+                background: $darkGrayishBlue;
+                padding: 0.3rem 0.85rem 0.25rem 1.55rem;
                 border-radius: 50px;
                 cursor: pointer;
     
                 .toggle-icon{
                     background:$white;
                     border-radius:50%;
-                    width:1.22rem;
-                    height:1.32rem;
+                    width:1.42rem;
+                    height:1.42rem;
                     transform: translateX(13px);
+                    padding: 0.8rem;
+
+
+
+
+                    width:1.42rem;
+                    height:1.42rem;
+
+
+
                 }
+
                 
             }
     
@@ -556,7 +567,7 @@
     
             width:100%;
             padding: 0 1rem;
-            max-width: 375px;
+            max-width: 500px;
     
          }
         
@@ -579,7 +590,7 @@
     
             padding: 1.5rem 0rem;
             background:$lightGrayishBlue;
-            background: $veryPaleBlue;
+            // background: $veryPaleBlue;
             height:310px;
             // width:340px;
             text-align: center;
@@ -606,7 +617,7 @@
     
     
             &:hover{
-                background: $lightGrayishBlue;
+                background:$cardHover;
             }
         }
     
@@ -697,6 +708,7 @@
     
             h1{
                 margin-top: 3rem;
+                color:$darkGrayishBlue;
             }
     
             @include breakpoint-down(medium){
@@ -713,7 +725,7 @@
                 width: 300px;
                 width:100%;
                 padding: 0 1rem;
-                max-width: 375px;
+                max-width: 500px;
                 margin:0 auto;
                 display: block;
             }
@@ -741,7 +753,7 @@
                 width: 300px;
                 width:100%;
                 padding: 0 1rem;
-                max-width: 375px;
+                max-width: 500px;
                 margin:0 auto;
                 display: block;
             }
@@ -753,7 +765,6 @@
         .cards{
             margin-top:1rem;
             background: $lightGrayishBlue;
-            background: $veryPaleBlue;
             border-radius: 5px;        
             cursor: pointer;
             min-height: 10.05rem;
@@ -768,7 +779,7 @@
             padding-right: 2rem;
     
             &:hover{
-                background: $lightGrayishBlue;
+                background:$cardHover;
             }
     
             
