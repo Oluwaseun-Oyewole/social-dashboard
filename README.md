@@ -1,4 +1,4 @@
-######## social media dashboard --   frontend mentor challenge built with HTML, SASS, JS
+##### social media dashboard --   frontend mentor challenge built with HTML, SASS, JS
 
 ![alt text](images/Capture.PNG)
 
